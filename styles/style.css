@@ -1,0 +1,139 @@
+/* css reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+
+/* heading */
+
+
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%; 
+  margin: auto;
+  margin-top: 10vh;
+  margin-bottom: 2rem;
+}
+
+.main_heading p:nth-child(1){
+  font-weight: 200;
+  font-size: 2.5rem;
+}
+
+.main_heading p:nth-child(2){
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.sub_heading{
+  padding: 1rem;
+  max-width: 596px;
+}
+
+
+/* cards */
+
+
+.cards_container{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 80%;
+  margin: auto;
+  justify-self: center;
+  align-items: center;
+  min-width: 0
+min-height: 0
+}
+.cards_container p{
+  font-size: 14px;
+  color: hsl(229, 6%, 66%);
+}
+.supervisor, .karma, .team_builder, .calculator{
+  background-color: white;
+  padding: 2rem; 
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+  
+}
+h1{
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+img{
+  object-fit: cover;
+  height: 5rem;
+  width: 5rem;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.team_builder{
+  border-top: 5px solid  hsl(0, 78%, 62%);
+  grid-column: 2/3;
+}
+
+.supervisor{
+  border-top: 5px solid  hsl(180, 62%, 55%);
+  grid-row: 1/3;
+  
+}
+
+.calculator{
+  border-top: 5px solid  hsl(212, 86%, 64%);
+  grid-column:3/4;
+  grid-row: 1/3;
+}
+
+.karma{
+  border-top: 5px solid  hsl(34, 97%, 64%);
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+
+/* footer */
+
+footer{
+  text-align: center;
+  font-size: 12px;
+}
+
+@media(max-width: 790px){
+  
+  .main_heading p:nth-child(1){
+    font-size: 1.5rem;
+  }
+  
+  .main_heading p:nth-child(2){
+    font-size: 1.5rem;
+  }
+
+  .sub_heading{
+    padding: 1rem;
+    max-width: 596px;
+  }
+  .cards_container{
+    display: flex;
+    flex-direction: column;
+  }
+  .supervisor, .karma, .team_builder, .calculator{
+    width: 100%;
+  }
+}
